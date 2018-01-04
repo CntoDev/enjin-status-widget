@@ -1,6 +1,6 @@
 var config = {
     cachet_api_url: "http://status.carpenoctem.co/api/v1/",
-    alias: [
+    aliases: [
         {   cachet_name: "operation capture and playback system",
             widget_name: "OCAP" },
         {   cachet_name: "main arma3 server",
@@ -98,9 +98,9 @@ function parseSingleComponent(component) {
 }
 
 function getComponentAlias(componentName) {
-    for(var i = 0; i < config.alias.length; i++) {
-        if(config.alias[i].cachet_name.toUpperCase() == componentName.toUpperCase()) {
-            return config.alias[i].widget_name;
+    for(var i = 0; i < config.aliases.length; i++) {
+        if(config.aliases[i].cachet_name.toUpperCase() == componentName.toUpperCase()) {
+            return config.aliases[i].widget_name;
         }
     }
 
